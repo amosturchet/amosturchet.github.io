@@ -1,1 +1,0 @@
-# amosturchet.github.io
