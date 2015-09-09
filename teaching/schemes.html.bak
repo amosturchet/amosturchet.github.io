@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scheme Theory webpage">
+    <meta name="author" content="Amos Turchet">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Scheme Theory</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+        
+    <!-- MATHJAX-->
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+	
+		<script type="text/javascript">
+		            // Smooth scrolling
+		            $("a").live("click", function() {
+		              fromTop = 20;
+		              href = $(this).attr("href");
+		              if(href && href.indexOf("#") != -1 && href.indexOf("#") != href.length - 1) {
+		                href = href.substring(href.indexOf("#"));
+		                if($(href).length > 0) {
+		                  $('html, body').animate({scrollTop: $(href).offset().top - fromTop}, 400);
+		                  return false;
+		                }
+		              }
+		            }); 
+
+		        </script>
+		
+  </head>
+
+  <body>
+	  
+	  
+	  <!-- HEADER - RIGHT NAV PILLS -->
+    
+	<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+		    <li><a href="http://www.math.chalmers.se/~tamos/index.html">Home</a></li>
+			<li><a href="http://www.math.chalmers.se/~tamos/index.html#shortCV">CV</a></li>
+		    <li><a href="http://www.math.chalmers.se/~tamos/research.html">Research</a></li>
+		    <li class="active"><a href="http://www.math.chalmers.se/~tamos/teaching.html">Teaching</a></li>
+            <li><a href="http://www.chalmers.se/en/departments/math/Pages/default.aspx">Dept.</a></li>
+            <li><a href="http://www.chalmers.se/">Chalmers</a></li>
+            </ul>
+        <h3 class="text-muted">Amos Turchet</h3>
+      </div>
+	  <br>
+
+
+	  
+	  <!-- CENTRAL JUMBOTRON: PICS AND CONTACTS -->
+	    
+      
+	
+	  
+	  
+	  
+	 <!-- CV PARAGRAPH -->
+	  
+      
+
+		  <!-- RESERACH PARAGRAPH -->
+
+
+	<p>
+	  	<h1 id="schemes" style="color: #5168A7;">Scheme Theory<br></h1> <br>
+		<h4> Time and Place: </h4> Wednesday, h 15-16.45, MVH12 (Math Dept.) <br>
+		<h4> Next class: </h4> March 4th 2015; <br>
+		<h4> Lecturers:</h4>
+        <ul>
+            <li> <a href="http://www.chalmers.se/en/staff/Pages/salberg.aspx">Per Salberger</a></li>
+            <li> <a href="http://www.math.chalmers.se/~tamos/index.html">Amos Turchet</a></li>
+        </ul>
+		
+        <h3> Course Description: </h3>
+        <p> The aim of this course is to give an introduction to modern Algebraic Geometry via the language of Scheme Theory. This theory was developed by Alexander Grothendieck and the French School in the sixties and has soon been regarded as the proper framework to study geometric objects both form the geometric and the arithmetic point of view. Nowadays schemes are ubiquitous in papers in Algebraic and Arithmetic Geometry. They are also used to solve problems in Kähler Geometry and Hodge Theory in Complex Analysis, in Algebraic Topology (J. Lurie) and in Langlands Theory (P. Scholze). The ideas of Grothendieck have even had applications to Mirror Symmetry (Kontsevich) and other areas of Mathematical Physics.<br>
+The course will be mainly concerned with definitions and basic properties of affine and projective schemes, divisors and linear systems. In particular the focus will be on Chapter 2 of Hartshorne’s book <em>Algebraic Geometry</em> and on some applications to the study of algebraic curves (Chapter 4).</p>
+        
+        <h3> Schedule: </h3>
+        <dl class="dl-horizontal">
+          <dt>Jan 28th</dt> <dd>Introductory Lecture (<a href="intro.html">MORE</a>)</dd>
+          <dt>Feb 4th</dt> <dd>Sheaf Theory</dd>
+          <dt>Feb 11st</dt> <dd>Spec of a commutative ring and the structure sheaf</dd>
+          <dt>Feb 18th</dt> <dd>(Affine) Schemes: Definition and Examples</dd>
+          <dt>Feb 25th</dt> <dd>Projective schemes. Fiber products.</dd>
+          <dt style="color: #B40404;">Mar 4th</dt> <dd style="color: #5168A7;">Properties of schemes and morphism.</dd>
+        </dl>
+		        
+        <h3>Bibliography:</h3>
+        <ul>
+        <li><h5>Main Textbook</h5>
+        Hartshorne, Robin: <em>Algebraic geometry</em>, Graduate Texts in Mathematics, No. 52, Springer-Verlag (1977).</li>
+		<li><h5>Suggested Readings</h5>
+        <ol>
+            <li>Eisenbud, David and Harris, Joe: <em>The geometry of schemes</em>, Graduate Texts in Mathematics, No. 197, Springer-Verlag (2000);</li>
+            <li>Vakil, Ravi: <em>Foundation of Algebraic geometry</em>, notes of a forthcoming book, available online <a href="http://math.stanford.edu/~vakil/216blog/">here</a>;</li>
+            <li>Liu, Qing: <em>Algebraic geometry and arithmetic curves</em>, Oxford Graduate Texts in Mathematics, Oxford University Press (2002);</li>
+            <li>Görtz, Ulrich and Wedhorn, Torsten: <em>Algebraic geometry I</em>, Advanced Lectures in Mathematics, Vieweg + Teubner, Wiesbaden (2010);</li>
+            <li>Ueno, Kenji: <em>Algebraic geometry 1 - From algebraic varieties to schemes</em>, American Mathematical Society, Providence, RI (1999). -<span style="font-weight: bold;"> Basic introduction </span>- </li>
+        </ol></li>
+            </ul>
+            
+            <h4>Notes:</h4>
+            <ul>
+                <li>There exists a PDF version of the notes taken by a participant. (<a href="http://hgustafsson.se/notes/algebraic-geometry/">CLICK HERE</a> for the notes)<br>
+            We think that they can be really useful and we are thankfull to Henrik to make them available.</li>
+            <li><a href="ex.html">List</a> of useful exercises</li>
+        </ul>
+    
+		<p class="text-right"><a href=#top> Back to top </a></p>	
+	  
+
+      <div class="footer">
+        <p><em> Created by</em> Amos Turchet <em>with</em> Bootstrap</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
