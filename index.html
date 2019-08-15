@@ -1,228 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amos Turchet academic webpage">
-    <meta name="keywords" content="Amos Turchet,math,CV,personal page">
-    <meta name="author" content="Amos Turchet">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Amos Turchet webpage</title>
+<head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Custom styles for this template -->
-    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+  <title>Amos Turchet Webpage</title>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-		
-	<!-- SMOOTH SCROLLING SCRIPT -->
-	<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
-	        <script type="text/javascript">
-       
-	            var _gaq = _gaq || [];
-	            _gaq.push(['_setAccount', 'UA-23876340-1']);
-	            _gaq.push(['_trackPageview']);
-		            (function() {
-	                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	            })();
-            
-	            function updateImage(imageSelector) {
-	                document.getElementById("activePicture").src = "images/" + imageSelector.value + ".jpg";
-	            }
-            
-	            function safemail(name, domain, display) {
-	                displayed=(typeof(display)=="undefined") ? name+"@"+domain : display
-	                document.write('<a href=mailto:' + name + '@' + domain + '>' + displayed + '</a>');
-	            }
-           
-	            // Smooth scrolling
-	            $("a").live("click", function() {
-	              fromTop = 20;
-	              href = $(this).attr("href");
-	              if(href && href.indexOf("#") != -1 && href.indexOf("#") != href.length - 1) {
-	                href = href.substring(href.indexOf("#"));
-	                if($(href).length > 0) {
-	                  $('html, body').animate({scrollTop: $(href).offset().top - fromTop}, 400);
-	                  return false;
-	                }
-	              }
-	            });
-	</script>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		
-  </head>
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <body>
-	  
-	  
-	  <!-- HEADER - RIGHT NAV PILLS -->
-    
-	<div class="container">
-      <div class="header">
-		 
-        <ul class="nav nav-pills">
-		    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#">Home</a></li>
-			<li class="nav-item"><a class="nav-link" data-toggle="pill" href="#info">Info</a></li>
-		    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#research">Research</a></li>
-		    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#teaching" class="smoothScroll">Teaching</a></li>
-			<li class="nav-item"><a class="nav-link" data-toggle="pill" href="http://www.math.washington.edu/">Dept.</a></li>
-			<li class="nav-item"><a class="nav-link" data-toggle="pill" href="http://www.washington.edu/">UW</a></li>
-        </ul>
-      </div>
-	  <br>
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
+    <!-- MATHJAX: renders TeX-->
+    <script type="text/javascript" async 
+	    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"> 
+    </script>	
 
-	  
-	  <!-- CENTRAL JUMBOTRON: PICS AND CONTACTS -->
-	    
-      <div class="jumbotron">
-		<div class="row">
-		  <div class="col-md-5"><img 
-        src="img/amos_pic1.jpg" alt="me" class="img-thumbnail"></div>
-		  <div class="col-md-7"> <h2> Amos Turchet</h2> <br> <h3>Acting Assistant Professor </h3> 
-              <a href="https://se.linkedin.com/pub/amos-turchet/40/a8/254">
-          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Amos Turchet's profile on LinkedIn"></a></div>
-		</div>
-		<div class = "row">
-            <div class="col-md-2"> </div>
-            <div class="col-md-10"> Contacts:
-            <h4> Department of Mathematics </h4>
-            <h4> University of Washington </h4>
-            <h5> Seattle WA 98195-4350, USA </h5>
-        </div>
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Amos Turchet</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#info">Info</a>
+	</li>-->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#positions">Positions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="files/aturchetCV.pdf">CV</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="https://www.sns.it">SNS</a>
+	</li>-->
+      </ul>
     </div>
-			
-		<div class="row">
-			<div class="col-md-2"> <br> office </div>
-			<div class="col-md-10"> <br>
-                <h4> Padelford C-528 </h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">  email </div>
-			<div class="col-md-10"> <em style="color: rgb(30, 144, 255);">
-				aturchet (at) uw . edu</em>  <br> </div>
-		</div>
-		<div class="row">
-			<div class="col-md-2">  tel </div>
-			<div class="col-md-10"> Office: (+1) 206 - 616 - 3027</div>
-		</div>
-        
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Amos
+          <span class="text-primary">Turchet</span>
+        </h1>
+        <div class="subheading mb-5"> Collegio Puteano, Scuola Normale Superiore · Piazza dei Cavalieri, 3 · 56100 PISA ·
+          <a href="mailto:">amos(dot)turchet(at)sns(dot)it</a>
+        </div>
+	<p class="lead mb-3"> I am a researcher in the <a href="http://crm.sns.it">Centro di Ricerca Matematica Ennio De Giorgi</a> of the <a href="https://www.sns.it">Scuola Normale Superiore</a> in Pisa.</p>
+	
+	<p class="lead mb-3">I am interested in and working on <span class="text-secondary">Diophantine, Arithmetic, Algebraic Geometry, and Number Theory</span>.</p>
+	
+	<p class="text-justify lead mb-3">Previously I was an Acting Assistant Professor at the Department of Mathematics at University of Washington under the mentorship of prof. <a href="https://sites.math.washington.edu/~bviray/">Bianca Viray</a> and a Postdoctoral Researcher in the Math Department at Chalmers University of Technology under the mentorship of prof. <a href="https://www.chalmers.se/en/staff/Pages/salberg.aspx">Per Salberger</a>.</p>
+
+	<p class="lead mb-3">I attained my Ph.D. in Mathematics on May 29, 2014, at the University of Udine under the supervision of prof. <a href="https://www.dmif.uniud.it/persone/pietro.corvaja/">Pietro Corvaja</a> with the Thesis <em>Geometric Lang-Vojta Conjecture in the projective plane</em>.</p>
+
+<!--	
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="far fa-file-pdf"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+	</div>-->
       </div>
-	  <br>
-	  <br>
-	  
-	  
-	  
-	 <!-- INFO PARAGRAPH -->
-	  
-      <p>
-  	<h3 id="info"><span style="color: #5168A7;">Info</span></h3>
-      
-      I am an Acting Assistant Professor in the Mathematics Department at University of Washington under the mentorship of prof. Bianca Viray. I am interested in and working on Diophantine, Arithmetic and Algebraic Geometry.<br><br>
-      
-      Previously I was a Postdoc Researcher in the Math Department at Chalmers University of Technology under the mentorship of prof. Per Salberger. <br><br>
+    </section>
 
-      I attained my Ph.D. in Mathematics on May 29, 2014, at the University of Udine under the supervision of prof. Pietro Corvaja with the Thesis <em>Geometric Lang-Vojta Conjecture in the projective plane</em>.<br><br>
-      
-      Click <a href="Index%20Folder/cv.pdf">here</a> for extended CV - Last update Jan 2019.
-      
-  	<p class="text-right"><a href=#top> Back to top </a></p>
-	
+    <hr class="m-0">
 
-		  <!-- RESERACH PARAGRAPH -->
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="research">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">The Erd&ouml;s-Ulam problem, Lang's conjecture, and uniformity</h4>
+            <div class="subheading">with K. Ascher and L. Braune</div>
+	    <p><a class="btn btn-link" data-toggle="collapse" href="#collapseErdUl" role="button" aria-expanded="false" aria-controls="collapseExample"> Abstract </a> 
+		  <div class="collapse" id="collapseErdUl"> 
+			  <div class="card card-body"> 
+	    A rational distance set is a subset of the plane such that the distance between any two points is a rational number. We show, assuming Lang's Conjecture, that the cardinalities of rational distance sets in general position are uniformly bounded, generalizing results of Solymosi-de Zeeuw, Makhul-Shaffaf, Shaffaf, and Tao. In the process, we give a criterion for certain varieties with non-canonical singularities to be of general type.
+			  </div>
+		  </div></p></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"><a href="http://front.math.ucdavis.edu/1901.02616">Arxiv</a> - <a href="http://de.arxiv.org/pdf/1901.02616.pdf"><i class="far fa-file-pdf"></i></a></span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">Uniformity for integral points on surfaces, positivity of log cotangent sheaves and hyperbolicity</h4>
+            <div class="subheading">with K. Ascher and K. DeVleming</div>
+	    <p><a class="btn btn-link" data-toggle="collapse" href="#collapseUnif" role="button" aria-expanded="false" aria-controls="collapseExample"> Abstract </a> 
+		  <div class="collapse" id="collapseUnif"> 
+			  <div class="card card-body"> 
+	    We show that all subvarieties of a quasi-projective variety with positive log cotangent bundle are of log general type. In addition, we show that smooth quasi-projective varieties with positive and globally generated log cotangent have finitely many integral points, generalizing a theorem of Moriwaki. Finally, we prove that the Lang-Vojta conjecture implies the number of stably integral points on curves of log general type, and surfaces of log general type with positive log cotangent sheaf are uniformly bounded.
+			  </div>
+		  </div></p></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"><a href="http://front.math.ucdavis.edu/1807.05946">Arxiv</a> - <a href="http://arxiv.org/pdf/1807.05946.pdf"><i class="far fa-file-pdf"></i></a></span>
+          </div>
+        </div>
 
 
-	
-	<hr><br>	
-	  	<h3 id="research" style="color: #5168A7;">Research<br></h3>
-	  	My main research interests are Diophantine, Arithmetic and Algebraic Geometry. Roughly speaking I am studying equations with rational coefficient and their solutions in either integers or rationals using geometric methods.
-        This field of mathematical research is called <em>Diophantine Geometry</em> and it is a fascinating subject with a very long history which can be traced back to <a href="http://en.wikipedia.org/wiki/Diophantus">Diophantus</a>. <br>
-	
-	<br>
-	  	<a href="research.html">CLICK HERE</a> for a more detailed description of my research and for my publication records.<br><br>
-        
-        <!--I organized the <a href="seminars.html">Algebraic Geometry and Number Theory Seminars</a> at Chalmers and GU.-->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">Fibered Threefolds and Lang-Vojta's Conjecture over Function Fields</h4>
+            <div class="subsubheading">Trans. Amer. Math. Soc. 369 (2017), 8537-8558</div>
+	    <p><a class="btn btn-link" data-toggle="collapse" href="#collapseTrans" role="button" aria-expanded="false" aria-controls="collapseExample"> Abstract </a> 
+		  <div class="collapse" id="collapseTrans"> 
+			  <div class="card card-body"> 
+				  Using the techniques introduced by Corvaja and Zannier in 2008 we solve the non-split case of the geometric Lang-Vojta Conjecture for affine surfaces isomorphic to the complement of a conic and two lines in the projective plane. In this situation we deal with sections of an affine threefold fibered over a curve, whose boundary, in the natural projective completion, is a quartic bundle over the base whose fibers have three irreducible components. We prove that the image of each section has bounded degree in terms of the Euler characteristic of the base curve.
+			  </div>
+		  </div></p></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"><a href="https://www.ams.org/journals/tran/2017-369-12/S0002-9947-2017-06968-3/">Journal</a> - <a href="http://arxiv.org/pdf/1310.7871.pdf"><i class="far fa-file-pdf"></i></a></span>
+          </div>
+        </div>
 
-	  		<p class="text-right"><a href=#top> Back to top </a></p>
-	  	
-		
-	
-    <p>
-	<hr>
-    <br>
-		<h3 id="teaching" style="color: #5168A7;">Teaching<br></h3>
-		<h5 style="color: #5168A7;">Current</h5>
-		<ul>
-			<li> <a href="teaching/spr2019/math308.html">MATH 308 H</a>; (2019)</li>
-		</ul>
-		<h5 style="color: #5168A7;">Past</h5>
-		<ul>
-			<li> <a href="teaching/win2019/math340.html">MATH 340 A</a>; (2019)</li>
-			<li> <a href="teaching/aut2018/math308.html">MATH 308 C and D</a>; (2018)</li>
-			<li> <a href="teaching/spr2018/math308.html">MATH 308 B</a>; (2018)</li>
-            <li> <a href="teaching/win2018/math308.html">MATH 308 D</a>; (2018)</li>
-			<li> <a href="teaching/win2018/math582.html">MATH 582 G</a>; (2018)</li>
-			<li> <a href="teaching/aut2017/math402.html">MATH 402 B</a>; (2017)</li>
-            <li> <a href="teaching/2016-17/spr2017/math308.html">MATH 308 G</a>; (2017) </li> 
-            <li> <a href="teaching/2016-17/win2017/math308.html">MATH 308 A and D</a>; (2017)</li> 
-			<li> <a href="teaching/schemes.html">Scheme Theory</a> (Chalmers); </li>
-			<li> Matlab for Single-variable and Multi-variable calculus (Chalmers); </li>
-            <li> Linear Algebra, Combinatorics and Optimization (University of Udine); </li>
-            <li> Single- and Multi-variable calculus (University of Udine); </li>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">A fibered power theorem for pairs of log general type</h4>
+            <div class="subheading">with K. Ascher</div>
+            <div class="subsubheading">Algebra and Number Theory 10 (2016), no. 7, 1581–1600.</div>
+	    <p><a class="btn btn-link" data-toggle="collapse" href="#collapseFPT" role="button" aria-expanded="false" aria-controls="collapseExample"> Abstract </a> 
+		  <div class="collapse" id="collapseFPT"> 
+			  <div class="card card-body"> 
+				  Let \(f: (X,D) \to B\) be a stably family with log canonical general fiber. We prove that, after a birational modification of the base \(\tilde{B} \to B\), there is a morphism from a high fibered power of the family to a pair of log general type. If in addition the general fiber is openly canonical, then there is a morphism from a high fibered power of the original family to a pair openly of log general type.
+			  </div>
+		  </div></p></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"><a href="https://msp.org/ant/2016/10-7/p06.xhtml">Journal</a> - <a href="http://arxiv.org/pdf/1506.07513.pdf"><i class="far fa-file-pdf"></i></a></span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">Invitation to Integral and Rational points on curves and surfaces</h4>
+            <div class="subheading">with P. Das</div>
+            <div class="subsubheading">Rational Points, Rational Curves, and Entire Holomorphic Curves on Projective Varieties, Contemporary Mathematics, vol. 654, Amer. Math. Soc., Providence, RI, 2015, pp. 53-73.</div>
+	    <p><a class="btn btn-link" data-toggle="collapse" href="#collapseInvit" role="button" aria-expanded="false" aria-controls="collapseExample"> Abstract </a> 
+		  <div class="collapse" id="collapseInvit"> 
+			  <div class="card card-body"> 
+				  This survey article is an introduction to Diophantine Geometry at a basic undergraduate level. It focuses on Diophantine Equations and the qualitative description of their solutions rather than detailed proofs.
+			  </div>
+		  </div></p></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"><a href="http://www.ams.org/books/conm/654/">Book</a> - <a href="https://arxiv.org/pdf/1407.7750"><i class="far fa-file-pdf"></i></a></span>
+          </div>
+        </div>
+
+
+        <h3 class="mb-5">In Preparation</h3>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">Vojta's Conjecture over function fields for surfaces dominating \(\mathbb{G}^2_m\)</h4>
+            <div class="subheading">with L. Capuano</div>
+	  </div></div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">Non-special varieties over function fields</h4>
+            <div class="subheading">with E. Rousseau</div>
+	  </div></div>
+
+
+        <h3 class="mb-5">Other</h3>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h4 class="mb-0 text-capitalize font-weight-normal">Hyperbolicity of varieties of log general type: arithmetic and geometry</h4>
+            <div class="subheading">with K. Ascher</div>
+	    <div class="subsubheading">Extended notes for a course given at the workshop "Geometry and Arithmetic of orbifolds" (UQaM - December 2018)</div></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"> <a href="files/hyperbolicity_notes.pdf"><i class="far fa-file-pdf"></i></a></span>
+	  </div></div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+		  <h4 class="mb-0 text-capitalize font-weight-normal">Geometric Lang-Vojta Conjecture in \(\mathbb{P}^2\)</h4>
+		  <div class="subsubheading">Ph.D. Thesis - Universit&agrave; degli Studi di Udine - 2014</div></div>
+          <div class="resume-date text-md-right">
+		  <span class="text-primary"><a href="files/PhD_Thesis-Turchet.pdf"><i class="far fa-file-pdf"></i></a></span>
+	  </div></div>
+      </div></section>
+
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="teaching">
+      <div class="w-100">
+        <h2 class="mb-5">Teaching</h2>
+
+        <div class="subheading mb-2">University of Washington</div>
+
+        <ul class="fa-ul mb-3">
+          <li>
+	    <i class="fa-li fas fa-chalkboard-teacher"></i>
+            MATH 308: Matrix Algebra and Applications (multiple sections)</li>
+          <li> 
+	    <i class="fa-li fas fa-chalkboard-teacher"></i>
+            MATH 340: Abstract Linear Algebra</li>
+          <li>
+		  <i class="fa-li fas fa-user-graduate"></i>
+            MATH 582: Diophantine Geometry of Curves (graduate course)</li>
+          <li>
+	    <i class="fa-li fas fa-chalkboard-teacher"></i>
+            MATH 402: Introduction to Modern Algebra</li>
         </ul>
-            <a href="teaching.html">CLICK HERE</a> for more details on teaching and dedicated pages. 
 
-	
-    <br>
-		<p class="text-right"><a href=#top> Back to top </a></p>	
-		<br>
+	<div class="subheading mb-2">Chalmers University of Technology</div>
+
+        <ul class="fa-ul mb-3">
+          <li>
+		  <i class="fa-li fas fa-user-graduate"></i>
+            Scheme Theory (graduate course)</li>
+          <li> 
+		  <i class="fa-li fas fa-users"></i>
+            MVE 085: multivariable calculus (exercise and Matlab sessions)</li>
+          <li>
+		  <i class="fa-li fas fa-users"></i>
+            MVE 016: calculus II (exercise and Matlab sessions)</li>
+        </ul>
+
+	<div class="subheading mb-2">Universit&agrave; degli studi di Udine</div>
+
+        <ul class="fa-ul mb-3">
+          <li> 
+		  <i class="fa-li fas fa-users"></i>
+            Matematica Discreta per Informatica (exercise sessions)</li>
+          <li>
+		  <i class="fa-li fas fa-users"></i>
+            Matematica per Architettura (exercise sessions)</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="positions">
+      <div class="w-100">
+        <h2 class="mb-5">Positions</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+          <div class="resume-content">
+            <h4 class="mb-0">Scuola Normale Superiore di Pisa</h4>
+            <div class="subheading mb-3">Junior Visiting Position</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2019 - Current</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+          <div class="resume-content">
+            <h4 class="mb-0">University of Washington</h4>
+            <div class="subheading mb-3">Acting Assistant Professor</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2016 - June 2019</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+          <div class="resume-content">
+            <h4 class="mb-0">Chalmers University of Technology - University of G&ouml;teborg</h4>
+            <div class="subheading mb-3">Postdoctoral Researcher</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2014 - July 2016</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <hr class="m-0">
+
+    <!--
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+    </section>-->
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 
       <div class="footer">
-        <p><em> Created by</em> Amos Turchet <em>with</em> Bootstrap</p>
-				
-				<p class="text-right">
-					<!--SITE COUNTER SCRIPT
-                        Start of Globel Code-->
-						<script language="JavaScript">
-						var count = "srks2";          // Change Your Account?
-						var type = "awg03";       // Change Your Counter Image?
-						var digits = "5";          // Change The Amount of Digits on Your Counter?
-						var prog = "hit";          // Change to Either hit/unique?
-						var statslink = "no";    // provide statistical link in counter yes/no?
-						var sitelink = "yes";     // provide link back to our site;~) yes/no?
-						var cntvisible = "yes"; // do you want counter visible yes/no?
-						</script>
-						<!--START DO NOT TAMPER WITH ANYTHING ELSE BELOW THIS LINE FOR YOUR WEBTV & UNIX VISITORS-->
-						<script language="JavaScript" src="http://005.free-counters.co.uk/count-072.js">
-						</script>
-						<noscript>
-							<a href="http://www.free-counters.co.uk" target="_blank">
-								<img  src="http://005.free-counters.co.uk/count-072.pl?count=srks2&amp;cntvisible=no&amp;mode=noscript"
-								alt="Free Counters" title="Free Counters" border="0">
-							</a>The following text will not be seen after you upload your website,
-							please keep it in order to retain your counter functionality 
-							<br><a href="http://www.free-counters.co.uk/trackers/" target="_blank">Trackers</a><br> <a
-							href="http://www.free-counters.co.uk/help/counter/" target="_blank">Counter Help</a><br>
-						
-						</noscript>
-						<!--END DO NOT TAMPER WITH ANYTHING ELSE ABOVE THIS LINE FOR YOUR WEBTV & UNIX VISITORS-->     
-						<!--End of Globel Code-->
-				</p>
+	      <p class="text-center"><em> Created by</em> Amos Turchet <em>using the template </em> <a href="https://startbootstrap.com/template-overviews/resume/">Start Bootstrap - Resume</a></p>
       </div>
 
-    </div>
-    <!--Bootstrap core JavaScript -->
-    <!--================================================== -->
-    <!--Placed at the end of the document so the pages load faster -->
-  </body>
+</body>
+
 </html>
+
+        <!--<ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+	    <i class="fas fa-chalkboard"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+	</ul>-->
