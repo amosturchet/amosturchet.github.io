@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LaTeX on Amos Blog</title>
+    <link>https://amosturchet.github.io/blog/tags/latex/</link>
+    <description>Recent content in LaTeX on Amos Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 11 Aug 2025 11:03:34 +0200</lastBuildDate>
+    <atom:link href="https://amosturchet.github.io/blog/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NeoVim Installation</title>
+      <link>https://amosturchet.github.io/blog/posts/001post-nvim/</link>
+      <pubDate>Mon, 11 Aug 2025 11:03:34 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/posts/001post-nvim/</guid>
+      <description>&lt;h2 id=&#34;neovim&#34;&gt;NeoVim&lt;/h2&gt;&#xA;&lt;p&gt;After some consideration, I decided to install &lt;a href=&#34;http://neovim.io&#34;&gt;NeoVim&lt;/a&gt; on my new MacBook Pro. Having used it sporadically at home and work before, I wanted to give it another shot. This post shares my experience installing NeoVim and creating a minimal configuration tailored to my needs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-previous-attempt&#34;&gt;My Previous Attempt&lt;/h3&gt;&#xA;&lt;p&gt;The last time I installed NeoVim, I followed an excellent &lt;a href=&#34;https://www.josean.com/posts/how-to-setup-neovim-2024&#34;&gt;blog post by Josean Martinez&lt;/a&gt;. Alongside the blog and a YouTube video, I managed to replicate the setup on my MacMini. However, I didn’t fully understand parts of the configuration, especially some plugins—this was mostly my lack of knowledge rather than unclear instructions.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="neovim">NeoVim</h2>
+<p>After some consideration, I decided to install <a href="http://neovim.io">NeoVim</a> on my new MacBook Pro. Having used it sporadically at home and work before, I wanted to give it another shot. This post shares my experience installing NeoVim and creating a minimal configuration tailored to my needs.</p>
+<h3 id="my-previous-attempt">My Previous Attempt</h3>
+<p>The last time I installed NeoVim, I followed an excellent <a href="https://www.josean.com/posts/how-to-setup-neovim-2024">blog post by Josean Martinez</a>. Alongside the blog and a YouTube video, I managed to replicate the setup on my MacMini. However, I didn’t fully understand parts of the configuration, especially some plugins—this was mostly my lack of knowledge rather than unclear instructions.</p>
+<p>The main issue was ending up with a fully working config I barely understood. I realized this painfully when trying to set up <a href="https://github.com/lervag/vimtex/">VimTex</a>, a plugin for working with LaTeX. Since I’m not a developer or programmer, my primary use of NeoVim is to write and edit text files, HTML, CSS, and mostly LaTeX documents. My goal was a working setup to create and edit .tex files with all the power of NeoVim, including snippets.</p>
+<p>I still use VSCode alongside NeoVim. Although integrating Vim with VSCode can be frustrating, VSCode meets most of my needs. When I finally got <em>VimTex</em> working in NeoVim, I saw its great potential to speed up my workflow and leverage superior snippet functionality (which doesn’t work well for me on VSCode with Vim emulation). However, I burned out on configuration and didn’t replicate these settings at work, so I ended up with a working NeoVim setup I rarely used at home and mainly reverted to VSCode.</p>
+<h3 id="a-new-mac-a-new-try">A New Mac, a New Try</h3>
+<p>A couple of months ago, I got a new laptop and adopted a minimalist philosophy: keep things clean and lean. I installed software mostly via <em>Homebrew</em> and limited Microsoft apps (still have to use Teams for university). I also restrained myself from installing too many new apps unless compelling.</p>
+<p>So the question was: Should I install NeoVim again and try to get VimTex working?</p>
+<p>With some weeks off work, I decided to give it a proper try—but I took a different approach this time.</p>
+<ul>
+<li>Starting point: <a href="https://youtu.be/m8C0Cq9Uv9o?si=0LRfo-6rwe8wca-D">TJ DeVries’ <em>The Only Video You Need to Get Started with Neovim</em></a><br>
+<a href="http://www.youtube.com/watch?v=m8C0Cq9Uv9o" title="The Only Video You Need to Get Started with Neovim"><img src="http://img.youtube.com/vi/m8C0Cq9Uv9o/0.jpg" alt="TJ DeVries’s Video"></a></li>
+</ul>
+<p>Following TJ DeVries&rsquo; excellent video, I used <a href="https://github.com/nvim-lua/kickstart.nvim">Kickstart</a> as a base instead of starting from scratch. The documentation was fantastic; reading through the <code>init.lua</code> file with its clear comments helped me understand rather than blindly copy configurations.</p>
+<p>I tweaked the setup and reorganized plugins to minimize code I understood little or nothing about. This is my final file structure:</p>
+
+
+
+
+
+<pre tabindex="0"><code>.
+├── doc
+│   ├── kickstart.txt
+│   └── tags
+├── init.lua
+├── lazy-lock.json
+├── lua
+│   ├── custom
+│   │   ├── core
+│   │   │   ├── init.lua
+│   │   │   ├── keymaps.lua
+│   │   │   └── options.lua
+│   │   └── plugins
+│   │       ├── alpha.lua
+│   │       ├── autopairs.lua
+│   │       ├── blink.lua
+│   │       ├── bufferline.lua
+│   │       ├── colorscheme.lua
+│   │       ├── conform.lua
+│   │       ├── guess-indent.lua
+│   │       ├── indent_line.lua
+│   │       ├── lazydev.lua
+│   │       ├── lspconfig.lua
+│   │       ├── mini.lua
+│   │       ├── nvim-tree.lua
+│   │       ├── telescope.lua
+│   │       ├── todo-comments.lua
+│   │       ├── treesitter.lua
+│   │       ├── vimtex.lua
+│   │       └── which-key.lua
+│   └── kickstart
+│       ├── health.lua
+│       └── plugins
+│           ├── debug.lua
+│           ├── gitsigns.lua
+│           ├── lint.lua
+│           └── neo-tree.lua
+├── node_modules
+│   └── tree-sitter-cli
+│       ├── cli.js
+│       ├── dsl.d.ts
+│       ├── install.js
+│       ├── LICENSE
+│       ├── package.json
+│       ├── README.md
+│       └── tree-sitter
+├── package-lock.json
+├── package.json
+└── README.md</code></pre><p>I kept the Kickstart files separate from my custom folder. Most plugins were initially called inside <code>init.lua</code>, but I created individual <code>.lua</code> files for each plugin I somewhat understood. The result is a reasonable, working configuration.</p>
+<h3 id="vimtex-setup">VimTex Setup</h3>
+<p>The last piece was installing <em>VimTex</em>. The original <a href="https://ejmastnak.com/tutorials/vim-latex/intro/">EJmastnack tutorial</a> is very helpful, but it targets VimScript, and since my config is in Lua, some adaptation was necessary.</p>
+<h4 id="a-small-hiccup">A Small Hiccup</h4>
+<p>I ran into a hiccup using <code>Treesitter</code> for LaTeX syntax highlighting. Apparently, <code>tree-sitter-cli</code> must be installed manually via <code>npm</code> to build LaTeX support (oddly, this step isn’t required for BibTeX). If I need to do this again, the command that solved it was:</p>
+
+
+
+
+
+<pre tabindex="0"><code>npm install -g tree-sitter-cli</code></pre>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
