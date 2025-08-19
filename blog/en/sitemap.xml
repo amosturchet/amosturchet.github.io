@@ -19,19 +19,16 @@
     <lastmod>2025-08-19T15:46:23+02:00</lastmod>
   </url><url>
     <loc>https://amosturchet.github.io/blog/tags/latex/</loc>
-    <lastmod>2025-08-11T11:03:34+02:00</lastmod>
+    <lastmod>2025-08-19T15:46:23+02:00</lastmod>
   </url><url>
     <loc>https://amosturchet.github.io/blog/tags/neovim/</loc>
-    <lastmod>2025-08-11T11:03:34+02:00</lastmod>
-  </url><url>
-    <loc>https://amosturchet.github.io/blog/posts/001post-nvim/</loc>
-    <lastmod>2025-08-11T11:03:34+02:00</lastmod>
+    <lastmod>2025-08-19T15:46:23+02:00</lastmod>
   </url><url>
     <loc>https://amosturchet.github.io/blog/tags/software/</loc>
-    <lastmod>2025-08-11T11:03:34+02:00</lastmod>
+    <lastmod>2025-08-19T15:46:23+02:00</lastmod>
   </url><url>
     <loc>https://amosturchet.github.io/blog/tags/</loc>
-    <lastmod>2025-08-11T11:03:34+02:00</lastmod>
+    <lastmod>2025-08-19T15:46:23+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -42,6 +39,12 @@
                 hreflang="en-US"
                 href="https://amosturchet.github.io/blog/tags/"
                 />
+  </url><url>
+    <loc>https://amosturchet.github.io/blog/posts/002post-vimtex/</loc>
+    <lastmod>2025-08-19T15:46:23+02:00</lastmod>
+  </url><url>
+    <loc>https://amosturchet.github.io/blog/posts/001post-nvim/</loc>
+    <lastmod>2025-08-11T11:03:34+02:00</lastmod>
   </url><url>
     <loc>https://amosturchet.github.io/blog/categories/</loc>
     <xhtml:link
