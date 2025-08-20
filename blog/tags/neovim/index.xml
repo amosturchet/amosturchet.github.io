@@ -6,8 +6,128 @@
     <description>Recent content in NeoVim on Amos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 19 Aug 2025 15:46:23 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 13:57:01 +0200</lastBuildDate>
     <atom:link href="https://amosturchet.github.io/blog/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GNU Stow and syncing dotfiles</title>
+      <link>https://amosturchet.github.io/blog/posts/003post-stowdotfiles/</link>
+      <pubDate>Wed, 20 Aug 2025 13:57:01 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/posts/003post-stowdotfiles/</guid>
+      <description>&lt;h2 id=&#34;dotfiles-and-organization-a-clean-setup-on-my-new-macbook&#34;&gt;Dotfiles and Organization: A Clean Setup on My New MacBook&lt;/h2&gt;&#xA;&lt;p&gt;After setting up my new MacBook with a focus on clean and minimal installations, I faced two main goals:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Organize the dotfiles in my home directory.&lt;/li&gt;&#xA;&lt;li&gt;Create a GitHub repository to sync dotfiles across multiple computers.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Here’s a concise overview of how I tackled these objectives using &lt;a href=&#34;https://www.gnu.org/software/stow/&#34;&gt;GNU Stow&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;using-gnu-stow-to-manage-dotfiles&#34;&gt;Using GNU Stow to Manage Dotfiles&lt;/h3&gt;&#xA;&lt;p&gt;I followed a great guide by &lt;a href=&#34;https://www.josean.com&#34;&gt;Josean Martinez&lt;/a&gt; titled &lt;a href=&#34;https://www.josean.com/posts/how-to-manage-dotfiles-with-gnu-stow&#34;&gt;How To Easily Manage Your Dotfiles With GNU Stow&lt;/a&gt;.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dotfiles-and-organization-a-clean-setup-on-my-new-macbook">Dotfiles and Organization: A Clean Setup on My New MacBook</h2>
+<p>After setting up my new MacBook with a focus on clean and minimal installations, I faced two main goals:</p>
+<ol>
+<li>Organize the dotfiles in my home directory.</li>
+<li>Create a GitHub repository to sync dotfiles across multiple computers.</li>
+</ol>
+<p>Here’s a concise overview of how I tackled these objectives using <a href="https://www.gnu.org/software/stow/">GNU Stow</a>.</p>
+<hr>
+<h3 id="using-gnu-stow-to-manage-dotfiles">Using GNU Stow to Manage Dotfiles</h3>
+<p>I followed a great guide by <a href="https://www.josean.com">Josean Martinez</a> titled <a href="https://www.josean.com/posts/how-to-manage-dotfiles-with-gnu-stow">How To Easily Manage Your Dotfiles With GNU Stow</a>.</p>
+<p>GNU Stow is the key tool in this setup — easily installable via Homebrew. It works by letting you keep your dotfiles organized in a dedicated directory (usually <code>~/dotfiles/</code>) and manage symbolic links in your home directory automatically.</p>
+<p>For my setup, I organized configurations for:</p>
+<ul>
+<li>Aspell</li>
+<li>NeoVim</li>
+<li>iTerm2</li>
+</ul>
+<p>This approach not only cleaned up my home directory but also enabled me to manage and sync my configuration files easily via GitHub.</p>
+<p><em>Note:</em> I won’t cover the full setup here since Josean’s blog post and accompanying YouTube video provide an excellent, step-by-step explanation.</p>
+<hr>
+<h3 id="syncing-dotfiles-with-github">Syncing Dotfiles with GitHub</h3>
+<p>Once the <code>~/dotfiles/</code> directory was well-structured and Stow had created the necessary symlinks, the final step was to push everything to a private GitHub repository.</p>
+<p>A small hiccup was that I accidentally started the repository with a <code>master</code> branch instead of <code>main</code>. After a quick fix, I now have a clean dotfiles repo that stores all my configurations online, allowing me to push or pull changes and keep settings consistent across all my devices.</p>
+<p>Here’s a snapshot of my dotfiles repo directory structure for reference:</p>
+
+
+
+
+
+<pre tabindex="0"><code>├── .aspell.en.prepl
+├── .aspell.en.pws
+├── .config
+│   ├── iterm2
+│   │   ├── AppSupport -&gt; /Users/amos/Library/Application Support/iTerm2
+│   │   └── sockets
+│   │       └── secrets
+│   └── nvim
+│       ├── .github
+│       │   ├── ISSUE_TEMPLATE
+│       │   │   └── bug_report.md
+│       │   ├── pull_request_template.md
+│       │   └── workflows
+│       │       └── stylua.yml
+│       ├── .gitignore
+│       ├── .stylua.toml
+│       ├── doc
+│       │   ├── kickstart.txt
+│       │   └── tags
+│       ├── init.lua
+│       ├── lazy-lock.json
+│       ├── lua
+│       │   ├── custom
+│       │   │   ├── core
+│       │   │   │   ├── init.lua
+│       │   │   │   ├── keymaps.lua
+│       │   │   │   └── options.lua
+│       │   │   └── plugins
+│       │   │       ├── alpha.lua
+│       │   │       ├── autopairs.lua
+│       │   │       ├── bufferline.lua
+│       │   │       ├── colorscheme.lua
+│       │   │       ├── conform.lua
+│       │   │       ├── guess-indent.lua
+│       │   │       ├── indent_line.lua
+│       │   │       ├── lazydev.lua
+│       │   │       ├── lazygit.lua
+│       │   │       ├── lspconfig.lua
+│       │   │       ├── luasnip.lua
+│       │   │       ├── mini.lua
+│       │   │       ├── nvim-cmp.lua
+│       │   │       ├── nvim-tree.lua
+│       │   │       ├── telescope.lua
+│       │   │       ├── todo-comments.lua
+│       │   │       ├── treesitter.lua
+│       │   │       ├── vimtex.lua
+│       │   │       └── which-key.lua
+│       │   └── kickstart
+│       │       ├── health.lua
+│       │       ├── info.lua
+│       │       └── plugins
+│       │           └── lint.lua
+│       ├── LuaSnip
+│       │   └── all.lua
+│       ├── node_modules
+│       │   ├── .bin
+│       │   │   ├── node-gyp-build -&gt; ../node-gyp-build/bin.js
+│       │   │   ├── node-gyp-build-optional -&gt; ../node-gyp-build/optional.js
+│       │   │   ├── node-gyp-build-test -&gt; ../node-gyp-build/build-test.js
+│       │   │   └── tree-sitter -&gt; ../tree-sitter-cli/cli.js
+│       │   ├── .package-lock.json
+│       │   └── tree-sitter-cli
+│       │       ├── cli.js
+│       │       ├── dsl.d.ts
+│       │       ├── install.js
+│       │       ├── LICENSE
+│       │       ├── package.json
+│       │       ├── README.md
+│       │       └── tree-sitter
+│       ├── package-lock.json
+│       ├── package.json
+│       └── README.md
+├── .git
+├── .zprofile
+├── .zsh_sessions
+│   ├── _expiration_check_timestamp
+│   └── 0EC8B8A7-66B2-4DB2-82C0-804BC3207BD6.session
+├── .zshrc
+└── README.md</code></pre><p>Pretty neat, if you ask me!</p>
+<hr>
+<h3 id="bonus-managing-zcompdump-files-from-oh-my-zsh">Bonus: Managing <code>.zcompdump</code> Files from Oh My Zsh</h3>
+<p>Finally, I managed to move the annoying <code>.zcompdump</code> files—created automatically by Oh My Zsh in my home folder—into a separate directory. This keeps my home clean and avoids clutter.</p>
+<p>For anyone facing the same issue, here&rsquo;s a helpful <a href="https://stackoverflow.com/questions/62931101/i-have-multiple-files-of-zcompdump-why-do-i-have-multiple-files-of-these">Stack Overflow post</a> with instructions on how to do this.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>VimTex and LuaSnip</title>
       <link>https://amosturchet.github.io/blog/posts/002post-vimtex/</link>

@@ -6,20 +6,20 @@
     <description>Recent content in Tags on Amos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 19 Aug 2025 15:46:23 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 13:57:01 +0200</lastBuildDate>
     <atom:link href="https://amosturchet.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LaTeX</title>
-      <link>https://amosturchet.github.io/blog/tags/latex/</link>
-      <pubDate>Tue, 19 Aug 2025 15:46:23 +0200</pubDate>
-      <guid>https://amosturchet.github.io/blog/tags/latex/</guid>
+      <title>Dotfiles</title>
+      <link>https://amosturchet.github.io/blog/tags/dotfiles/</link>
+      <pubDate>Wed, 20 Aug 2025 13:57:01 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/tags/dotfiles/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>NeoVim</title>
       <link>https://amosturchet.github.io/blog/tags/neovim/</link>
-      <pubDate>Tue, 19 Aug 2025 15:46:23 +0200</pubDate>
+      <pubDate>Wed, 20 Aug 2025 13:57:01 +0200</pubDate>
       <guid>https://amosturchet.github.io/blog/tags/neovim/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
@@ -27,8 +27,16 @@
     <item>
       <title>Software</title>
       <link>https://amosturchet.github.io/blog/tags/software/</link>
-      <pubDate>Tue, 19 Aug 2025 15:46:23 +0200</pubDate>
+      <pubDate>Wed, 20 Aug 2025 13:57:01 +0200</pubDate>
       <guid>https://amosturchet.github.io/blog/tags/software/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>LaTeX</title>
+      <link>https://amosturchet.github.io/blog/tags/latex/</link>
+      <pubDate>Tue, 19 Aug 2025 15:46:23 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/tags/latex/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
