@@ -31,7 +31,7 @@
 <li>Added the default <code>aerospace.toml</code> config from the repo.</li>
 <li>Tweaked a few keybindings and settings to improve navigation.</li>
 </ul>
-<p>A quick tip: since I sync my dotfiles using GNU Stow (see <a href="">previous blog post</a>), the config file wasn’t recognized until after running <code>stow</code> — an important step to remember.</p>
+<p>A quick tip: since I sync my dotfiles using GNU Stow (see <a href="https://amosturchet.github.io/blog/posts/003post-stowdotfiles/">previous blog post</a>), the config file wasn’t recognized until after running <code>stow</code> — an important step to remember.</p>
 <hr>
 <h3 id="my-workspace-setup">My Workspace Setup</h3>
 <p>I created four custom Aerospace workspaces to organize my daily activities:</p>
