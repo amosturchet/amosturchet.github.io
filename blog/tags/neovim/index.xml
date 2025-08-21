@@ -6,8 +6,54 @@
     <description>Recent content in NeoVim on Amos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 20 Aug 2025 13:57:01 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 21 Aug 2025 11:58:42 +0200</lastBuildDate>
     <atom:link href="https://amosturchet.github.io/blog/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Aerospace</title>
+      <link>https://amosturchet.github.io/blog/posts/004post-aerospace/</link>
+      <pubDate>Thu, 21 Aug 2025 11:58:42 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/posts/004post-aerospace/</guid>
+      <description>&lt;h2 id=&#34;window-manager-for-macos-achieving-a-clean-lightweight-setup&#34;&gt;Window Manager for macOS: Achieving a Clean, Lightweight Setup&lt;/h2&gt;&#xA;&lt;p&gt;The last missing piece in my quest for a clean and lightweight Mac setup was a tiling window manager. While macOS includes a native window manager with basic window tiling capabilities, it’s limited in customization and requires reconfiguration each session.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-i-wanted&#34;&gt;What I Wanted&lt;/h3&gt;&#xA;&lt;p&gt;For example: I often work on LaTeX documents within a &lt;code&gt;NeoVim&lt;/code&gt; session running inside &lt;code&gt;iTerm2&lt;/code&gt; (my terminal of choice — a bit old school, but it works great for me). When I compile via &lt;code&gt;VimTex&lt;/code&gt;, the output PDF automatically opens in &lt;code&gt;Skim&lt;/code&gt;. Ideally, I wanted a fast, easy way to arrange these two windows side-by-side — with &lt;code&gt;iTerm2&lt;/code&gt; occupying about 70% of the screen, and &lt;code&gt;Skim&lt;/code&gt; taking the rest — all controlled with just a few keystrokes.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="window-manager-for-macos-achieving-a-clean-lightweight-setup">Window Manager for macOS: Achieving a Clean, Lightweight Setup</h2>
+<p>The last missing piece in my quest for a clean and lightweight Mac setup was a tiling window manager. While macOS includes a native window manager with basic window tiling capabilities, it’s limited in customization and requires reconfiguration each session.</p>
+<h3 id="what-i-wanted">What I Wanted</h3>
+<p>For example: I often work on LaTeX documents within a <code>NeoVim</code> session running inside <code>iTerm2</code> (my terminal of choice — a bit old school, but it works great for me). When I compile via <code>VimTex</code>, the output PDF automatically opens in <code>Skim</code>. Ideally, I wanted a fast, easy way to arrange these two windows side-by-side — with <code>iTerm2</code> occupying about 70% of the screen, and <code>Skim</code> taking the rest — all controlled with just a few keystrokes.</p>
+<hr>
+<h3 id="why-tiling-window-managers-on-macos">Why Tiling Window Managers on macOS?</h3>
+<p>Tiling Window Managers (TWM) are widely used on Linux distributions but aren’t natively supported in macOS beyond basic tiling via the green maximize button. This native feature is fine for simple use but falls short when managing dynamic workflows involving multiple windows that open and close automatically, or when fine-grained control is needed.</p>
+<p>I explored popular macOS tiling managers like <a href="https://github.com/koekeishiya/yabai">Yabai</a> and <a href="https://github.com/ianyh/Amethyst">Amethyst</a>. Although Yabai is powerful, it requires disabling System Integrity Protection (SIP) for full functionality — something I preferred to avoid.</p>
+<hr>
+<h3 id="discovering-and-setting-up-aerospace">Discovering and Setting Up Aerospace</h3>
+<p>My main source of inspiration was <a href="https://www.josean.com">Josean</a>, who recently highlighted a promising new tiling window manager: <a href="https://github.com/nikitabobko/AeroSpace">Aerospace</a>. His <a href="https://www.josean.com/posts/how-to-setup-aerospace-tiling-window-manager">detailed setup guide</a> made it easy to get started.</p>
+<p>Setting up Aerospace was straightforward:</p>
+<ul>
+<li>I maintain a dedicated <code>dotfiles</code> directory.</li>
+<li>Added the default <code>aerospace.toml</code> config from the repo.</li>
+<li>Tweaked a few keybindings and settings to improve navigation.</li>
+</ul>
+<p>A quick tip: since I sync my dotfiles using GNU Stow (see <a href="">previous blog post</a>), the config file wasn’t recognized until after running <code>stow</code> — an important step to remember.</p>
+<hr>
+<h3 id="my-workspace-setup">My Workspace Setup</h3>
+<p>I created four custom Aerospace workspaces to organize my daily activities:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="ln">1</span><span class="cl">B <span class="c1">#Browser</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">M <span class="c1">#Mail</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">S <span class="c1">#Sounds and Music</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">T <span class="c1">#Terminal</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">V <span class="c1">#VSCode</span></span></span></code></pre></div><p>With this setup, pressing <code>ALT + &lt;key&gt;</code> instantly switches me to a well-configured workspace and allows using Aerospace shortcuts for window resizing and positioning.</p>
+<hr>
+<h3 id="the-result-focused-workflow-for-latex-writing">The Result: Focused Workflow for LaTeX Writing</h3>
+<p>In my <code>T</code> (Terminal) workspace — dedicated to <code>iTerm2</code> running <code>NeoVim</code> — compiling LaTeX with <code>VimTex</code> automatically opens <code>Skim</code> in the same workspace, arranged neatly side-by-side. With just a few keystrokes, such as <code>ALT + SHIFT + -</code> or <code>ALT + SHIFT + +</code>, I adjust window sizes precisely until I get the perfect layout.</p>
+<p>This workflow keeps me focused and productive without distractions — mission accomplished!</p>
+<hr>
+<p><strong>Summary:</strong><br>
+Aerospace offers a lightweight, easy to configure tiling window manager for macOS, enabling workflow automation and window management that native macOS simply can’t match for power users like me.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>GNU Stow and syncing dotfiles</title>
       <link>https://amosturchet.github.io/blog/posts/003post-stowdotfiles/</link>
