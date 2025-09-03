@@ -6,8 +6,32 @@
     <description>Recent content in Tags on Amos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 21 Aug 2025 11:58:42 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 11:52:38 +0200</lastBuildDate>
     <atom:link href="https://amosturchet.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://amosturchet.github.io/blog/tags/blog/</link>
+      <pubDate>Wed, 03 Sep 2025 11:52:38 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/tags/blog/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://amosturchet.github.io/blog/tags/hugo/</link>
+      <pubDate>Wed, 03 Sep 2025 11:52:38 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/tags/hugo/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>https://amosturchet.github.io/blog/tags/software/</link>
+      <pubDate>Wed, 03 Sep 2025 11:52:38 +0200</pubDate>
+      <guid>https://amosturchet.github.io/blog/tags/software/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
     <item>
       <title>Dotfiles</title>
       <link>https://amosturchet.github.io/blog/tags/dotfiles/</link>
@@ -21,14 +45,6 @@
       <link>https://amosturchet.github.io/blog/tags/neovim/</link>
       <pubDate>Thu, 21 Aug 2025 11:58:42 +0200</pubDate>
       <guid>https://amosturchet.github.io/blog/tags/neovim/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    <item>
-      <title>Software</title>
-      <link>https://amosturchet.github.io/blog/tags/software/</link>
-      <pubDate>Thu, 21 Aug 2025 11:58:42 +0200</pubDate>
-      <guid>https://amosturchet.github.io/blog/tags/software/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
