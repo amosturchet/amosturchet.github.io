@@ -1,5 +1,5 @@
 # brace-expansion
-
+{% raw %}
 [Brace expansion](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html), 
 as known from sh/bash, in JavaScript.
 
@@ -127,3 +127,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+{% endraw %}
