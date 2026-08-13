@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+  resources:
+    - "*.html"
+    - "files/**"
+    - "img/**"
+    - "blog/**"
+    - "alg_geo/**"
+    - "lftcm26/**"
+    - "css/**"
+    - "js/**"
+    - "vendor/**"
+    - "publications.bib"
+
+website:
+  title: "Amos Turchet"
+  site-url: "https://amosturchet.github.io"
+  description: "Academic webpage of Amos Turchet, mathematician at Roma Tre University."
+  navbar:
+    pinned: true
+    collapse: true
+    left:
+      - text: "Home"
+        href: "#about"
+      - text: "Research"
+        href: "#research"
+      - text: "Teaching"
+        href: "#teaching"
+      - text: "Positions"
+        href: "#positions"
+      - text: "Links"
+        href: "#links"
+    right:
+      - text: "CV"
+        href: "files/aturchetCV.pdf"
+      - icon: github
+        href: "https://github.com/amosturchet"
+        aria-label: "GitHub"
+      - text: "ORCID"
+        href: "https://orcid.org/0000-0003-3411-2521"
+      - text: "Blog"
+        href: "blog/"
+  page-footer:
+    center: "© Amos Turchet · Built with Quarto"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
+    html-math-method: mathjax
+
+lang: en
