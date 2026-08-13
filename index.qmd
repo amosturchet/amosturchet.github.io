@@ -20,17 +20,33 @@ My research is in **Diophantine geometry, arithmetic geometry, algebraic geometr
 
 [Curriculum vitae](files/aturchetCV.pdf){.btn .btn-primary} [ORCID](https://orcid.org/0000-0003-3411-2521){.btn .btn-outline-primary} [GitHub](https://github.com/amosturchet){.btn .btn-outline-primary}
 :::
-
 ::: {.hero-photo}
 ![](img/profile_2.jpg){fig-alt="Portrait of Amos Turchet" .profile-photo}
 :::
+
+:::
+::: {.contact-details}
+[Contact]{.contact-title}
+
+::: {.contact-row}
+[]{.bi .bi-envelope} [amos(DOT)turchet(AT)uniroma3.it](mailto:amos.turchet@uniroma3.it)
 :::
 
-::: {.contact-strip}
-**Dipartimento di Matematica e Fisica · Università degli Studi Roma Tre**  
-Largo S. L. Murialdo 1 · 00146 Roma · Office C113 · tel: (+39 06 5733) 8244  
-amos(dot)turchet(at)uniroma3(dot)it
+::: {.contact-row}
+[]{.bi .bi-telephone} [tel. (+39 06 5733) 8244]()
 :::
+
+::: {.contact-row}
+[]{.bi .bi-geo-alt}
+Ufficio C.1.013
+Largo S. L. Murialdo 1,
+Dipartimento di Matematica e Fisica  
+Università degli Studi Roma Tre  
+00146 Roma, Italy
+:::
+
+:::
+
 
 I was previously a Junior Visitor at Scuola Normale Superiore under the mentorship of [Umberto Zannier](https://www.sns.it/en/zannier-umberto), an Acting Assistant Professor at the University of Washington under the mentorship of [Bianca Viray](https://sites.math.washington.edu/~bviray/), and a Postdoctoral Researcher at Chalmers University of Technology under the mentorship of [Per Salberger](https://www.chalmers.se/en/staff/Pages/salberg.aspx).
 
@@ -42,7 +58,7 @@ I organize the [Geometry Seminars](http://ricerca.matfis.uniroma3.it//users/geom
 
 ### Publications
 
-The list below is generated from [`publications.bib`](publications.bib). To add or update a paper, edit the BibTeX entry and rebuild the site.
+[The list below is generated from [`publications.bib`](publications.bib). To add or update a paper, edit the BibTeX entry and rebuild the site.]: #
 
 ::: {#publication-list}
 :::
