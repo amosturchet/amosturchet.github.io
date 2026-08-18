@@ -1,6 +1,6 @@
 # Amos Turchet — Quarto website
 
-This is the Quarto migration of <https://amosturchet.github.io>.
+This is Amos Turchet personal academic webpage written in [Quarto](https://quarto.org): <https://amosturchet.github.io>.
 
 The main site is intentionally simple to maintain:
 
@@ -10,8 +10,9 @@ The main site is intentionally simple to maintain:
 - `filters/publications.lua` — turns the BibTeX database into publication cards automatically. You normally do **not** need to edit this file.
 - `.github/workflows/publish.yml` — builds and publishes the site to GitHub Pages.
 
-The existing course/event HTML pages, blog, images, and PDFs are retained as static resources, so their URLs keep working. The old Bootstrap homepage is retained as `index-bootstrap.html` for reference during the transition.
+This is a migration of a Bootstrap-HTML previously written website. The existing course/event HTML pages, blog, images, and PDFs are retained as static resources, so their URLs keep working. The old Bootstrap homepage is retained as `index-bootstrap.html` for reference during the transition.
 
+<!--
 ## Local editing
 
 Install Quarto, then from the repository directory run:
@@ -85,3 +86,4 @@ GitHub Actions will rebuild and deploy the site automatically.
 ## Migration strategy
 
 This version deliberately migrates only the main homepage to Quarto. Existing pages such as `group_coh.html`, `abelian.html`, `alggeo25.html`, `uniformity.html`, and the generated `blog/` are still served unchanged. They can be converted to `.qmd` one at a time later without breaking their current URLs.
+-->
