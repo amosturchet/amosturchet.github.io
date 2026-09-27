@@ -72,6 +72,12 @@ I organize the [Geometry Seminars](http://ricerca.matfis.uniroma3.it//users/geom
 
 ### Università di Roma Tre
 
+#### 2026–2027
+
+- AL 410: Algebra Commutativa — [Moodle](https://matematicafisica.el.uniroma3.it/course/view.php?id=1745)
+- AL 450: Teoria delle Rappresentazioni — [Moodle](https://matematicafisica.el.uniroma3.it/course/view.php?id=1744)
+- Group Cohomology and Galois Cohomology (PhD) — [course page](group_coh.html)
+
 #### 2025–2026
 
 - Geometria (Ingegneria Elettronica) — [Moodle](https://ingegneriaindustrialeelettronicameccanica.el.uniroma3.it/course/view.php?id=1600)
@@ -122,8 +128,9 @@ I organize the [Geometry Seminars](http://ricerca.matfis.uniroma3.it//users/geom
 - Matematica Discreta per Informatica (exercise sessions)
 - Matematica per Architettura (exercise sessions)
 
-### Reading courses
+### Advanced Reading courses
 
+- [Relative Manin-Mumford]() (after Gao-Habegger)
 - [Uniform Mordell](uniformity.html) (after Dimitrov–Gao–Habegger)
 
 ## Positions {#positions}
