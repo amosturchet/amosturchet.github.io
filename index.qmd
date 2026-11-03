@@ -206,7 +206,7 @@ Postdoctoral Researcher
 - [Conferences in Arithmetic Geometry](https://kskedlaya.org/confs.cgi) — Kedlaya
 - [Conferences in Number Theory](http://www.numbertheory.org/ntw/N3.html)
 - [Nordic Number Theory Network](http://www.n-cube.net)
-- [Winter Meeting in Algebra and Geometry](alggeo25.html)
+- [Winter Meeting in Algebra and Geometry](alggeo26.html)
 - [Roman Number Theory Association](http://www.rnta.eu)
 - [Roma Tre Geometry Seminars](http://ricerca.matfis.uniroma3.it//users/geometria/seminarigeometria.html)
 - [Number Theory events in Roma](https://sites.google.com/site/lauracapuano1987/number-theory-in-rome?authuser=0)
